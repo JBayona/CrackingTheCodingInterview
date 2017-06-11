@@ -18,7 +18,7 @@ Implement an function reverse which reverse a string, try to do it in place.
   return str.join('');
 }
 
-//Option 2 - ES&
+//Option 2 - ES6ss
 function reverseInPlace(str){
   var begin = 0;
   var end = str.length-1;
