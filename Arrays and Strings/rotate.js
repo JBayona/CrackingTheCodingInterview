@@ -4,7 +4,7 @@ image by 90 degrees. Can you do it in place?
 We can do this moving the top edge to the righ edge, the 
 right edge to the bottom edge, the bottom edge to the left
 edge and the left edge to the top edge.
-Swap index by index O(N^2)
+Swap index by index - Complex O(N^2)
 */
 
 function rotate(matrix, n){
