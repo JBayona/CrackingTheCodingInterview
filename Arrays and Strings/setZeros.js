@@ -17,7 +17,7 @@ function setZeros(matrix){
     }
   }
 
-  //Set arr[i][j] to 0 if either row i or column j has a 0
+  //Set arr[i][j] to 0 if either row "i" or column "j" has a 0
   for(var i = 0; i < matrix.length; i++){
     for(var j = 0; j < matrix[0].length; j++){
       if(row[i] || column[j]){
