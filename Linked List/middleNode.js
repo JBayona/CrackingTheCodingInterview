@@ -8,13 +8,17 @@ function ListNode(val, next) {
 }
 
 function middleNode(head) {
-  let slow = head;
-  let fast = head;
+
+	let newHeadDummy = new ListNode(0);
+    newHeadDummy.next = head;
+
+	let slow = newHeadDummy;
+	let fast = newHeadDummy;
   
-  while(slow && fast && fast.next) {
-    slow = slow.next;
-    fast = fast.next.next;
-  }
+	while(slow && fast && fast.next) {
+	slow = slow.next;
+	fast = fast.next.next;
+	}
   
   return slow;
 }
