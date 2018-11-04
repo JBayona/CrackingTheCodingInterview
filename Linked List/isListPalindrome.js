@@ -13,7 +13,7 @@ isListPalindrome(l) = false.
 https://codefights.com/interview/jQyCRiwF2BjBMYy7i/topics/linked-lists/description
 */
 
-//Option 2 - Dividir la lista, voltear y comparar =(n) y espacio O(1)
+//Option 2 - Dividir la lista, voltear y comparar O(N) en tiempo y espacio O(1)
 
 // Definition for singly-linked list:
  function ListNode(x, node) {
@@ -39,6 +39,7 @@ function isListPalindrome(l) {
       }else{ //impar
         l2 = cur.next;
       }
+      // Break the reference so we can have two linked lists
       prev.next = null;
       break;
     }
